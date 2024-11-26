@@ -6,8 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		495A61752CD820CC002E328E /* SwiftGodotKit in Frameworks */ = {isa = PBXBuildFile; productRef = 495A61742CD820CC002E328E /* SwiftGodotKit */; };
+		49E953FE2CF61C1C0087297B /* game.pck in Resources */ = {isa = PBXBuildFile; fileRef = 49E953FD2CF61C1C0087297B /* game.pck */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		495A61622CD8202B002E328E /* testSwiftGodotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSwiftGodotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E953FD2CF61C1C0087297B /* game.pck */ = {isa = PBXFileReference; lastKnownFileType = file; path = game.pck; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495A61752CD820CC002E328E /* SwiftGodotKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +39,7 @@
 		495A61592CD8202B002E328E = {
 			isa = PBXGroup;
 			children = (
+				49E953FD2CF61C1C0087297B /* game.pck */,
 				495A61642CD8202B002E328E /* testSwiftGodotKit */,
 				495A61632CD8202B002E328E /* Products */,
 			);
@@ -65,6 +73,7 @@
 			);
 			name = testSwiftGodotKit;
 			packageProductDependencies = (
+				495A61742CD820CC002E328E /* SwiftGodotKit */,
 			);
 			productName = testSwiftGodotKit;
 			productReference = 495A61622CD8202B002E328E /* testSwiftGodotKit.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = 495A61592CD8202B002E328E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				495A61732CD820CC002E328E /* XCLocalSwiftPackageReference "../SwiftGodotKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 495A61632CD8202B002E328E /* Products */;
 			projectDirPath = "";
@@ -109,6 +121,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E953FE2CF61C1C0087297B /* game.pck in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +337,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		495A61732CD820CC002E328E /* XCLocalSwiftPackageReference "../SwiftGodotKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../SwiftGodotKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		495A61742CD820CC002E328E /* SwiftGodotKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftGodotKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 495A615A2CD8202B002E328E /* Project object */;
 }

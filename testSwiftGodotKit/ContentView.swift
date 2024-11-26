@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import SwiftGodot
+import SwiftGodotKit
 
 struct ContentView: View {
+    @State var app = GodotApp(packFile: "game.pck")
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Game is below:")
+            GodotAppView(app: app)
+                .padding()
         }
-        .padding()
     }
 }
 
